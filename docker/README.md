@@ -15,3 +15,6 @@ On local machine create a directory for housing the notebook and the work direct
 This should 
    - download and install latest container for jupyter with conda/scikit
    - bring up the server
+!This doesn't work if you already have a notebook on the port used in the script!
+
+Yeah, don't trust me, read the shell scripts before you run them.
