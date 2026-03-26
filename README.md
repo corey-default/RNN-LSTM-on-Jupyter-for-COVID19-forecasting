@@ -8,11 +8,12 @@
 **Forecast:** 90 days ahead using a 2-layer LSTM wrapped in a HuggingFace-style Pipeline
 
 **Artifacts:**
-- Two notebooks
+- This repos currently contains 2 notebooks
   - *covid-lstm-jhu.ipynb*:  An RNN-LSTM model with minimal comments, minimal context stored.
-    - stored as: covid_lstm_jhu.pt,  covid_scaler_jhu.pkl 
+    - Context saved as: covid_lstm_jhu.pt, covid_scaler_jhu.pkl 
   - *covid-lstm-jhu.ipynb-commented*:  The same RNN-LSTM with extensive comments, and extensive context stored.
     - Designed for fast/low cost context recovery (i.e. context rehydration).
-    - stored as: 
+    - Context saved as: covid_lstm_jhu.pt, covid_scaler_jhu.pkl and covid_metadata_jhu.pkl
+- **Caveat**:  the two notebooks write to the same pyTorch and pickle filenames.  You might want to change that if you run these notebooks side-by-side or if you run them on different locations.
 
 
