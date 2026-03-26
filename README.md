@@ -10,9 +10,9 @@
 **Artifacts:**
 - Two notebooks
   - *covid-lstm-jhu.ipynb*:  An RNN-LSTM model with minimal comments, minimal context stored.
-    - stored as: covid_lstm_jhu.pt  covid_scaler_jhu.pkl 
-  - *covid-lstm-jhu.ipynb*:  The same RNN-LSTM with extensive comments, and extensive context stored.
+    - stored as: covid_lstm_jhu.pt,  covid_scaler_jhu.pkl 
+  - *covid-lstm-jhu.ipynb-commented*:  The same RNN-LSTM with extensive comments, and extensive context stored.
     - Designed for fast/low cost context recovery (i.e. context rehydration).
-    - stored as:  
+    - stored as: 
 
 
