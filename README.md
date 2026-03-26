@@ -24,18 +24,21 @@
       
 - **Caveat**:  the two notebooks write to the same pyTorch (.pt) and pickle (.pkl) filenames.  You might want to change that if you run these notebooks side-by-side or if you run them for different locations.
 
-## Docker container
-These Jupyter notebooks were created on Docker containers.  They were built and run on latest quay containers on March 26, 2026.  The following bash .sh file was used:  ***docker/run-scipy-docker-container.sh***
-
-The containers used run 
-  - Juypter,
-  - conda,
-  - huggingface transformers,
-  - pytorch,
+## Docker containers
+These Jupyter notebooks were created on Docker containers.  They were built and run on latest quay containers on March 26, 2026.  
+The following bash .sh file was used: ***docker/run-scipy-docker-container.sh***
+This .sh file accessed quay.io to download the latest pyTorch container and these included:
+  - Juypter
+  - conda
+  - pytorch
   - scikit.
+Huggingface transformers were installed separately.
   
 The datasets are small:  4100 locations, 1000+ time-points per location and 10+ fields per time point.  
-The current notebook was run on just mortality data.
+The current notebook was run on just mortality data.  Training locally on a HP Z workstation takes < 10 sec.
+
+I include some random markdown on Docker and a few .sh files I use regularly.  Feel free to ignore all that. 
+
 
 
 
