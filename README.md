@@ -1,4 +1,5 @@
 # COVID-19 Deaths Forecasting — JHU CSSE Format
+### Run the ipynb to understand the model.  The comments are extensive.
 
 **Data format:** JHU CSSE `time_series_covid19_deaths_US.csv`  
 - Header row present  
@@ -18,17 +19,18 @@
       
 - **Caveat**:  the two notebooks write to the same pyTorch and pickle filenames.  You might want to change that if you run these notebooks side-by-side or if you run them on different locations.
 
-# Docker container
-These Jupyter notebooks were created on Docker containers.  They were built and run on latest quay containers on March 26, 2026.
+## Docker container
+These Jupyter notebooks were created on Docker containers.  They were built and run on latest quay containers on March 26, 2026.  The following bash .sh file was used:  ***docker/run-scipy-docker-container.sh***
 
 The containers used run 
   - Juypter,
   - conda,
   - huggingface transformers,
   - pytorch,
-  - scikit.  
-I build on SUSE running on an HP Z and train these models locally on Jupyter, no less, and it takes about 30 seconds.  
-The datasets are small:  4100 locations, for 1000+ time-points and 10 fields or 4*10^7B.  To get the lowdown, checkout ***docker/run-scipy-docker-container.sh***.
+  - scikit.
+  
+The datasets are small:  4100 locations, 1000+ time-points per location and 10+ fields per time point.  
+The current notebook was run on just mortality data.
 
 
 
