@@ -4,3 +4,14 @@
 ***START HERE -- https: //jupyter-docker-stacks.readthedocs.io/en/latest/*** 
 
 I use these files for daily work, they may or may not help you.  Included is a notebook where I basically dumped my markdown notes on Docker. It's very idiosyncratic.
+
+#### Notes to self: 
+On local machine create a directory for housing the notebook and the work directory.  For example:
+```
+ - mkdir learning-docker-jupyter
+ - mkdir learning-docker-jupyter/work
+ - sh run-scipy-docker-container.sh learning-docker-jupyter
+```
+This should 
+   - download and install latest container for jupyter with conda/scikit
+   - bring up the server
